@@ -7,4 +7,3 @@ SCRIPT_DIR=$(cd $(dirname $0); pwd)
 
 # Set symbolic link of .vimrc to home directory
 ln -s $SCRIPT_DIR/.vimrc $HOME/.vimrc
-
