@@ -5,10 +5,15 @@
 # Directory that this script is in
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 
-# download molokai
+echo "Download molokai"
 git clone https://github.com/tomasr/molokai
+
+# error occur
+if [ $? != 0]; then exit; fi
+
+echo "copy molokai to ~/.vim/colors"
 mkdir -p ~/.vim/colors
 cp ./molokai/colors/molokai.vim ~/.vim/colors/
 
-# Set symbolic link of .vimrc to home directory
+echo "make symbolic link of .vimrc to ~"
 ln -s $SCRIPT_DIR/.vimrc $HOME/.vimrc
