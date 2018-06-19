@@ -9,7 +9,7 @@ echo "Download molokai"
 git clone https://github.com/tomasr/molokai
 
 # error occur
-if [ $? != 0]; then exit; fi
+if [ $? != 0 ]; then exit; fi
 
 echo "copy molokai to ~/.vim/colors"
 mkdir -p ~/.vim/colors
