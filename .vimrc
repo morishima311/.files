@@ -16,6 +16,10 @@ set showcmd
 " 見た目系
 " Set color molokai
 colorscheme molokai
+syntax on
+let g:molokai_original = 1
+let g:rehash256 = 1
+set background=dark
 " 行番号を表示
 set number
 " 現在の行を強調表示
@@ -61,3 +65,4 @@ set wrapscan
 set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+set backspace=indent,eol,start
