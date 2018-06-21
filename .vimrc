@@ -20,6 +20,7 @@ syntax on
 let g:molokai_original = 1
 let g:rehash256 = 1
 set background=dark
+set t_Co=256
 " 行番号を表示
 set number
 " 現在の行を強調表示

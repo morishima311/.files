@@ -17,3 +17,5 @@ cp ./molokai/colors/molokai.vim ~/.vim/colors/
 
 echo "make symbolic link of .vimrc to ~"
 ln -s $SCRIPT_DIR/.vimrc $HOME/.vimrc
+
+echo "MY WORK IS DONE!"
