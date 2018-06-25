@@ -17,4 +17,11 @@ ln -sfi $SCRIPT_DIR/.vimrc $HOME/.vimrc
 echo "----make symbolic link of .tmux.conf to HOME----"
 ln -sfi $SCRIPT_DIR/.tmux.conf $HOME/.tmux.conf
 
+
+echo "----append .bashrc to ~/.bashrc----"
+if [ ! -e ~/.bashrc ]; then
+    touch .bashrc
+fi
+cat $SCRIPT_DIR/.bashrc >> ~/.bashrc
+
 echo "----MY WORK IS DONE!----"
