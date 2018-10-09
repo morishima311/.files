@@ -21,4 +21,7 @@ if [ ! -e ~/.bashrc ]; then
 fi
 cat $SCRIPT_DIR/.bashrc >> ~/.bashrc
 
+echo "----copy rc to ~/.ssh/rc----"
+cp ./rc ~/.ssh/
+
 echo "----MY WORK IS DONE!----"
