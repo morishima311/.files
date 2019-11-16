@@ -1,4 +1,7 @@
-#----renew SSH_AUTH_SOCK when attach tmux----
+
+# ---- Morishima-dotfiles start ----
+
+# Renew SSH_AUTH_SOCK when attach tmux
 agent="$HOME/.ssh/agent"
 if [ -S "$SSH_AUTH_SOCK" ]; then
     case $SSH_AUTH_SOCK in
@@ -10,3 +13,5 @@ elif [ -S $agent ]; then
 else
     echo "no ssh-agent"
 fi
+
+# ---- Morishima-dotfiles end ----
