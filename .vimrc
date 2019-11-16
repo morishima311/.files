@@ -5,6 +5,7 @@ set autoread
 set hidden
 set showcmd
 
+autocmd ColorScheme * highlight Normal ctermbg=236
 " Set color molokai
 colorscheme molokai
 syntax on
