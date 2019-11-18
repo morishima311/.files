@@ -14,4 +14,7 @@ else
     echo "no ssh-agent"
 fi
 
+# Force tmux to assume the terminal supports 256 colours
+alias tmux='tmux -2'
+
 # ---- Morishima-dotfiles end ----
