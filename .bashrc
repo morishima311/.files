@@ -1,6 +1,4 @@
-
-# ---- Morishima-dotfiles start ----
-
+#rmkm/dotfiles begin
 # Renew SSH_AUTH_SOCK when attach tmux
 agent="$HOME/.ssh/agent"
 if [ -S "$SSH_AUTH_SOCK" ]; then
@@ -11,10 +9,9 @@ if [ -S "$SSH_AUTH_SOCK" ]; then
 elif [ -S $agent ]; then
     export SSH_AUTH_SOCK=$agent
 else
-    echo "no ssh-agent"
+#    echo "no ssh-agent"
 fi
 
 # Force tmux to assume the terminal supports 256 colours
 alias tmux='tmux -2'
-
-# ---- Morishima-dotfiles end ----
+#rmkm/dotfiles end

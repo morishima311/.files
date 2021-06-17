@@ -1,3 +1,5 @@
+"rmkm/dotfiles
+
 set fenc=utf-8
 set nobackup
 set noswapfile
@@ -6,13 +8,13 @@ set hidden
 set showcmd
 
 autocmd ColorScheme * highlight Normal ctermbg=236
-" Set color molokai
-colorscheme molokai
 syntax on
 let g:molokai_original = 1
 let g:rehash256 = 1
 set background=dark
 set t_Co=256
+colorscheme molokai
+
 " Show row number
 set number
 set cursorline
