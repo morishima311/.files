@@ -39,3 +39,10 @@ set wrapscan
 set hlsearch
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 set backspace=indent,eol,start
+
+call plug#begin('~/.vim/plugged')
+" Make sure you use single quotes
+Plug 'mtdl9/vim-log-highlighting'
+
+" Initialize plugin system
+call plug#end()

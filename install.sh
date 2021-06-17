@@ -30,6 +30,9 @@ echo "==> Download molokai"
 git clone https://github.com/tomasr/molokai
 echo "==> Download Tmux Plugin Manager"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+echo "==> Download vim-plug"
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 echo "==> Copy molokai to ~/.vim/colors"
 mkdir -p ~/.vim/colors
@@ -58,5 +61,8 @@ else
     fi
     cat $SCRIPT_DIR/.bashrc >> ~/.bashrc
 fi
+
+echo "==> Install vim plugings"
+vim -c PlugInstall -c q -c q ~/.vimrc
 
 echo "---- MY WORK IS DONE! ----"
