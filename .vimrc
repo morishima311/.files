@@ -13,6 +13,7 @@ let g:molokai_original = 1
 let g:rehash256 = 1
 set background=dark
 set t_Co=256
+set term=screen-256color
 colorscheme molokai
 
 " Show row number

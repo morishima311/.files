@@ -65,4 +65,6 @@ fi
 echo "==> Install vim plugings"
 vim -c PlugInstall -c q -c q ~/.vimrc
 
+source ~/.bashrc
+
 echo "---- MY WORK IS DONE! ----"
